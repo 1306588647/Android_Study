@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这个布局文件就是详细新闻内容显示模板-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailNews"
+        android:orientation="vertical">
+    <!--用来显示标题-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+    <!--    设置一个线性横向布局，用来存放来源和时间-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+        <!--设置来源文本，id属性设置为source，方便用java代码设置具体来源-->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/source"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        <!--设置时间文本，id属性设置为date，方便用java代码设置具体时间-->
+        <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:layout_weight="1"/>
+
+        <!--设置线性布局，用来存放分界线和详细内容文本-->
+    </LinearLayout>
+    <!--    设置分界线，用一张图片来当分界线-->
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:src="@drawable/timg"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+    <!--    具体内容，id属性是设置成content，方便java代码来设置具体内容-->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            />
+
+</LinearLayout>

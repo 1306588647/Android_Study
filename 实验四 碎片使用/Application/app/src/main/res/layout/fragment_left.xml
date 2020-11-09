@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这个碎片就是新闻列表布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LeftFragment"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/news1">
+
+        <ImageView
+                android:id="@+id/listimage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="90dp"
+                android:maxHeight="80dp"
+                android:src="@drawable/haibao" />
+
+        <TextView
+                android:id="@+id/listtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/listimage1"
+                android:text="海绵宝宝快乐的一天"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        <TextView
+                android:id="@+id/listsource1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listtitle1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/listimage1"
+                android:text="来源：新华网"
+                android:textSize="15sp" />
+
+        <TextView
+                android:id="@+id/listdate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listtitle1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:text="时间：2020/10/09"
+                android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news2"
+            android:clickable="true">
+
+        <ImageView
+                android:id="@+id/listimage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="90dp"
+                android:maxHeight="80dp"
+                android:src="@drawable/paidaxing" />
+
+        <TextView
+                android:id="@+id/listtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/listimage2"
+                android:text="派大星星开心的一天"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        <TextView
+                android:id="@+id/listsource2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listtitle2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/listimage2"
+                android:text="来源：新华网"
+                android:textSize="15sp" />
+
+        <TextView
+                android:id="@+id/listdate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listtitle2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:text="时间：2020/10/09"
+                android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>
