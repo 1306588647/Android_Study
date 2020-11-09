@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这个布局文件就是设备是横屏的时候显示的主页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <!--由于是横屏显示，所以左边是新闻列表碎片-->
+    <fragment
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/leftfragment"
+            android:name="com.example.application.LeftFragment"
+            android:layout_weight="2" />
+
+    <!--由于是横屏显示，所以右边是新闻详情FrameLayout容器，用来存放新闻详情碎片-->
+    <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rightframe"
+            android:layout_weight="3" />
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这个布局文件主要是设备是竖屏显示的主页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+<!--由于是竖屏显示，只需要显示主页新闻列表-->
+    <!--fragment碎片用来显示新闻列表布局-->
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/leftfragment"
+            android:name="com.example.application.LeftFragment" />
+
+
+</LinearLayout>
